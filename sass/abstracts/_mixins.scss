@@ -1,0 +1,39 @@
+@mixin btn {
+  padding: 1.7rem 3rem;
+  border-radius: 10rem;
+  line-height: 0;
+  display: inline-block;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint ==tab-lands {
+    // 1070px == 65.625em;
+    @media only screen and (max-width: 66.875em) {
+      @content;
+    }
+  }
+  @if $breakpoint ==container {
+    // 1200px  == ;
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint ==tab {
+    // 700px == 43.75em;
+    @media only screen and (max-width: 43.75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint ==phone {
+    //520px  == 32.5em;
+    @media only screen and (max-width: 32.5em) {
+      @content;
+    }
+  }
+}

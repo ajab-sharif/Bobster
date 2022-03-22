@@ -1,0 +1,9 @@
+.headding--primary {
+  font-weight: 600;
+  font-size: 6rem;
+  line-height: 1.4;
+  @include respond(phone) {
+    line-height: 1;
+    font-style: 5rem;
+  }
+}

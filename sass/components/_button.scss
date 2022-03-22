@@ -1,0 +1,32 @@
+.btn--download {
+  @include btn;
+  background-color: $color--gray-dark;
+  color: $color--light;
+  transition: box-shadow, 0.3s ease, background 0.2s ease;
+  line-height: 1.2;
+  @include respond(tab) {
+    align-self: flex-start;
+    margin-top: 1rem;
+    margin-left: -3px;
+  }
+  &:hover {
+    background-color: $color--dark;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: $color--light;
+  }
+}
+.btn--primary {
+  margin-top: 1.5rem;
+  padding: 1.5rem 3rem;
+  background: $color--secondary;
+  border-radius: 10rem;
+  display: inline-block;
+  color: $color--light;
+  transition: background 0.3s;
+  font-weight: 400;
+  letter-spacing: 1px;
+  &:hover {
+    background: $color--primary;
+    color: $color--light;
+  }
+}

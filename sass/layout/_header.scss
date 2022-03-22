@@ -1,0 +1,70 @@
+.header {
+  height: 100vh;
+  background-image: url("../../img/bg_hero_1.svg");
+  background-size: cover;
+  background-position: center;
+  &__logo img {
+    height: 5rem;
+    margin-right: 5rem;
+    cursor: pointer;
+    display: inline-block;
+  }
+  @include respond(tab-lands) {
+    height: auto;
+  }
+  &__content {
+    display: flex;
+    @include respond(phone) {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  &__right {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    & img {
+      display: block;
+      position: absolute;
+      width: 25rem;
+    }
+    @include respond(tab-lands) {
+      display: none;
+    }
+  }
+  &__label {
+    margin-left: 3.5rem;
+    position: relative;
+    font-weight: 400;
+    display: inline-block;
+    color: $color--dark;
+    &::before {
+      color: $color--light;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      content: "@";
+      top: 0;
+      left: -3.5rem;
+      height: 3rem;
+      width: 3rem;
+      background: $color--secondary;
+      position: absolute;
+      border-radius: 5rem;
+    }
+  }
+  &__cta {
+    margin-top: 3.2rem;
+    padding: 5rem 0;
+  }
+  &__text {
+    max-width: 44rem;
+  }
+}
+.x {
+  height: 100vh;
+}
