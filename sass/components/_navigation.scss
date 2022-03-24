@@ -1,5 +1,8 @@
 .nav {
   padding: 2.2em 0;
+  & > .container {
+    max-width: 125rem;
+  }
   @include respond(tab) {
     padding: 1rem 0;
     background-color: $color--light;
@@ -9,7 +12,7 @@
     transition: height 0.3s ease-in;
   }
   &__grow--height {
-    height: 45rem;
+    height: 33rem;
   }
   &__content {
     display: flex;
@@ -26,6 +29,7 @@
       position: absolute;
       width: 100%;
       left: 0;
+      padding-top: 1rem;
       top: 7rem;
       transform: translateY(-100%);
       opacity: 0;
@@ -40,8 +44,8 @@
     display: flex;
     @include respond(tab) {
       flex-direction: column;
-      & a {
-        padding: 1rem 0 !important;
+      & li {
+        padding: 0.5rem 0 !important;
       }
     }
     & li {

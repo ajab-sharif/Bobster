@@ -1,1 +1,75 @@
- // 
+.client {
+  padding-top: 10rem;
+  &__content {
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4rem;
+    @include respond(tab-lands) {
+      grid: 0;
+      grid-row-gap: 7rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__logo-box img {
+    height: 10rem;
+  }
+}
+.section--1 {
+  background-image: url("../../img/pattern_1.svg");
+  background-size: cover;
+  position: center;
+  padding: 10rem 0;
+  &__content {
+    display: inline-flex;
+  }
+  &__left {
+    width: 50%;
+  }
+  &__right {
+    width: 50%;
+  }
+  &__left img {
+    display: block;
+    width: 25rem;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba($color--gray-dark, 0.2);
+    border-radius: 3rem;
+  }
+  &__right {
+    display: inline-flex;
+    align-items: center;
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem 0;
+  }
+  &__list-icon {
+    height: 9rem;
+    width: 14rem;
+    position: relative;
+    border-radius: 50%;
+    background: $color--secondary;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 3rem;
+  }
+  &__list-icon i {
+    font-size: 4rem;
+    color: $color--light;
+  }
+  &__list-content {
+    & P {
+      font-size: 1.7rem;
+      line-height: 1.3;
+    }
+  }
+}
