@@ -10,10 +10,11 @@ html {
 }
 body {
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1.8rem;
   line-height: 1.7;
-  color: #383340;
+  color: $color--dark;
   background-color: $color--light;
+  font-weight: 600;
 }
 ul {
   list-style: none;
@@ -23,6 +24,13 @@ a {
 }
 a:hover {
   color: greenyellow;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 }
 .container {
   width: 95%;

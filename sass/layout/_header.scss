@@ -20,7 +20,11 @@
     }
   }
   &__left {
+    padding-right: 12rem;
     margin-top: 6rem;
+    @include respond(tab-lands) {
+      padding-right: 0;
+    }
   }
   &__right {
     width: 60%;
@@ -71,4 +75,5 @@
 }
 .x {
   height: 100vh;
+  background: gray;
 }
