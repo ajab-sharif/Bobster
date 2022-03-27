@@ -30,3 +30,17 @@
     color: $color--light;
   }
 }
+.btn--secondary {
+  @include btn;
+  background: color--light;
+  border: 3px solid $color--secondary;
+  align-self: flex-start;
+  padding: 2.3rem 2rem;
+  font-size: 2rem;
+  color: $color--secondary;
+  transition: background 0.3s ease, color 0.3s ease;
+  &:hover {
+    color: $color--light;
+    background: $color--secondary;
+  }
+}

@@ -37,7 +37,7 @@
   }
 }
 .section--1 {
-  background-image: url("../../img/pattern_1.svg");
+  background-image: url("../img/pattern_1.svg");
   background-size: cover;
   position: center;
   padding: 10rem 0;
@@ -50,7 +50,7 @@
     }
   }
   &__left {
-    flex: 0.55;
+    flex: 0.75;
     flex-shrink: 1;
   }
   &__left img {
@@ -59,6 +59,7 @@
     max-width: 25rem;
     box-shadow: 0px 0px 10px rgba($color--gray-dark, 0.2);
     border-radius: 3rem;
+    margin: 0 auto;
   }
   &__right {
     display: inline-flex;
@@ -98,8 +99,8 @@
     }
   }
   &__list-icon {
-    height: 10rem;
-    width: 10rem;
+    height: 8rem;
+    width: 8rem;
     position: relative;
     border-radius: 50%;
     align-items: center;
@@ -112,7 +113,56 @@
     }
   }
   &__list-icon i {
-    font-size: 4rem;
+    font-size: 3rem;
     color: $color--light;
+  }
+}
+.section--2 {
+  padding: 10rem 0;
+  background-image: url("../img/pattern_2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  &__content {
+    padding: 3rem 0;
+    display: flex;
+    @include respond(tab-lands) {
+      flex-direction: column;
+      & > div {
+        padding: 5rem 0;
+      }
+    }
+    @include respond(tab) {
+      text-align: center;
+      & .headding--secondary {
+        font-size: 3.5rem;
+      }
+      & p {
+        font-size: 1.3rem;
+      }
+      & .btn--secondary {
+        align-self: center;
+      }
+    }
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding-left: 8rem;
+  }
+  &__right {
+    flex: 0.85;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    & img {
+      width: 95%;
+      max-width: 25rem;
+      display: block;
+      margin: 0 auto;
+    }
   }
 }

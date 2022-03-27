@@ -10,7 +10,7 @@ html {
 }
 body {
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.7;
   color: $color--dark;
   background-color: $color--light;
@@ -23,7 +23,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: greenyellow;
+  color: rgb(0, 64, 225);
 }
 h1,
 h2,
@@ -33,7 +33,7 @@ h5,
 h6 {
 }
 .container {
-  width: 95%;
+  width: 90%;
   max-width: 120rem;
   margin: 0 auto;
 }

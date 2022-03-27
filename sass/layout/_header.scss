@@ -3,7 +3,17 @@
   background-image: url("../img/bg_hero_1.svg");
   background-size: cover;
   background-position: center;
+  &__logo {
+    @include respond(tab) {
+      position: relative;
+      widows: 50%;
+      z-index: 33;
+      background: $color--light;
+    }
+  }
   &__logo img {
+    position: relative;
+    z-index: 33;
     height: 5rem;
     margin-right: 5rem;
     cursor: pointer;
